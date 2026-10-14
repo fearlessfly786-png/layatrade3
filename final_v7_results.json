@@ -1,0 +1,50 @@
+{
+ "system": "v7 = consensus(v6 head, v7 counter-trained head) + sell veto; buy iff both buy and avg P(buy)>=0.40",
+ "n": 994,
+ "action_accuracy": 0.8803,
+ "majority_baseline": 0.8934,
+ "trades": 30,
+ "buys": 30,
+ "sells": 0,
+ "win_rate": 0.5333,
+ "book_net_after_fees": 47.04,
+ "per_class": {
+  "buy": {
+   "precision": 0.2333,
+   "recall": 0.14,
+   "f1": 0.17500000000000002,
+   "support": 73
+  },
+  "hold": {
+   "precision": 0.9004,
+   "recall": 0.9775,
+   "f1": 0.9373650107991361,
+   "support": 984
+  },
+  "sell": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 56
+  }
+ },
+ "confusion": {
+  "buy": {
+   "hold": 43,
+   "buy": 7
+  },
+  "hold": {
+   "hold": 868,
+   "buy": 20
+  },
+  "sell": {
+   "hold": 53,
+   "buy": 3
+  }
+ },
+ "comparison_v6": {
+  "book": 35.65,
+  "trades": 38,
+  "wins": 20
+ }
+}

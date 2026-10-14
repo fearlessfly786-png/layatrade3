@@ -1,0 +1,3 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1623.31it/s]
+train items 2175, calibration items 241, eval items 241 (calibration_slice), skipped {}, device cpu
+optimizer budget: 2175 train item(s), effective batch up to 16 (micro_batch 8 x grad_accum 2), 408 optimizer updates over 3 epoch(s)

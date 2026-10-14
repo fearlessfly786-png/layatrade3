@@ -1,0 +1,61 @@
+{
+ "dataset": "trade_eval.jsonl",
+ "n": 994,
+ "label_distribution": {
+  "hold": 888,
+  "sell": 56,
+  "buy": 50
+ },
+ "majority_baseline": 0.8934,
+ "action_accuracy": 0.7857,
+ "macro_f1": 0.3684,
+ "per_class": {
+  "buy": {
+   "precision": 0.1455,
+   "recall": 0.16,
+   "f1": 0.1524,
+   "support": 50
+  },
+  "hold": {
+   "precision": 0.9035,
+   "recall": 0.8649,
+   "f1": 0.8838,
+   "support": 888
+  },
+  "sell": {
+   "precision": 0.0562,
+   "recall": 0.0893,
+   "f1": 0.069,
+   "support": 56
+  }
+ },
+ "confusion": {
+  "buy": {
+   "buy": 8,
+   "hold": 37,
+   "sell": 5
+  },
+  "hold": {
+   "buy": 41,
+   "hold": 768,
+   "sell": 79
+  },
+  "sell": {
+   "buy": 6,
+   "hold": 45,
+   "sell": 5
+  }
+ },
+ "conviction": {
+  "exact_match": 0.0825,
+  "within_1": 1.0,
+  "mae": 0.6877,
+  "n": 994
+ },
+ "mean_prob_true_class": 0.3565,
+ "prediction_distribution": {
+  "hold": 850,
+  "sell": 89,
+  "buy": 55
+ }
+}
